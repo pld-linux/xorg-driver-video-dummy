@@ -1,21 +1,24 @@
 Summary:	X.org dummy video driver
 Summary(pl):	Pusty sterownik obrazu X.org
 Name:		xorg-driver-video-dummy
-Version:	0.1.0.1
+Version:	0.1.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/driver/xf86-video-dummy-%{version}.tar.bz2
-# Source0-md5:	5a56ddedeac6ddc4583676f6e5ac3847
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-dummy-%{version}.tar.bz2
+# Source0-md5:	e32e425cf5e39ca42964360013c0d13d
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	xorg-proto-fontsproto-devel
+BuildRequires:	xorg-proto-randrproto-devel
+BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xf86dgaproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.1
-BuildRequires:	xorg-xserver-server-devel
+BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -52,5 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/dummy_drv.so
 #%{_mandir}/man4/dummy.4x*
