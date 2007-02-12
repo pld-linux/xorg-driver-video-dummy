@@ -1,5 +1,5 @@
 Summary:	X.org dummy video driver
-Summary(pl):	Pusty sterownik obrazu X.org
+Summary(pl.UTF-8):   Pusty sterownik obrazu X.org
 Name:		xorg-driver-video-dummy
 Version:	0.2.0
 Release:	0.1
@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 X.org dummy video driver.
 
-%description -l pl
+%description -l pl.UTF-8
 Pusty sterownik obrazu X.org.
 
 %prep
