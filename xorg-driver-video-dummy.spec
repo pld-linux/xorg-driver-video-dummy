@@ -1,13 +1,13 @@
 Summary:	X.org dummy video driver
 Summary(pl.UTF-8):	Pusty sterownik obrazu X.org
 Name:		xorg-driver-video-dummy
-Version:	0.3.7
-Release:	7
+Version:	0.3.8
+Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-dummy-%{version}.tar.bz2
-# Source0-md5:	071e408461f2fec1764723474fbafdf4
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-dummy-%{version}.tar.bz2
+# Source0-md5:	dfd8b9d02a5f12decd474b4c52775977
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -18,10 +18,11 @@ BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xf86dgaproto-devel
+BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.3
-BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
+BuildRequires:	xorg-xserver-server-devel >= 1.4.99.901
 %{?requires_xorg_xserver_videodrv}
-Requires:	xorg-xserver-server >= 1.0.99.901
+Requires:	xorg-xserver-server >= 1.4.99.901
 Provides:	xorg-driver-video
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
