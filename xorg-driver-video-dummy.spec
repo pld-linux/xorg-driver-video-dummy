@@ -2,7 +2,7 @@ Summary:	X.org dummy video driver
 Summary(pl.UTF-8):	Pusty sterownik obrazu X.org
 Name:		xorg-driver-video-dummy
 Version:	0.3.8
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-dummy-%{version}.tar.bz2
